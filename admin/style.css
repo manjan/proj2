@@ -1,0 +1,167 @@
+body, table{
+    font-family:helvetica, arial, sans-serif;
+    font-size:12px;
+    color:#000;
+}
+
+#wrapper
+{
+    margin: 10px auto;
+    width:960px;
+}
+#header
+{
+    float:left;
+    width: 100%;
+}
+.ques
+{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+#content
+{
+    float:left;
+    width: 100%;
+}
+#contentwrapper
+{
+    border:1px solid #ccc;
+    float:left;
+    width:100%;
+    padding: 10px;
+}
+h1{
+  
+   font-size:16px;
+   background:#cccccc;
+   padding:5px 0px 5px 5px;
+}
+#login_form
+{
+    width: 300px;
+    border:1px solid #ccc;
+    float:left;
+   
+}
+#form_element
+{
+    padding:10px;
+}
+#form_element1
+{
+    font-weight:bold;
+    background:#99CCFF;
+    padding:10px;
+}
+#form_wrapper
+{
+    float:left;
+    width:100%;
+}
+
+input, textarea{
+    border:1px solid #cccccc;
+    width: 199px;
+}
+input[type="submit"]{
+    background:#999999;
+    color:#fff;
+    padding:2px 10px 2px 10px;
+    float:right;
+    width: 100px;
+    border:1px solid #000;
+    font-weight:bold;
+}
+.label{
+   width: 80px;
+   font-weight: bold;
+   float: left;
+   display: inline;
+}
+.paginate {
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+a.paginate {
+	border: 1px solid #000080;
+	padding: 2px 6px 2px 6px;
+	text-decoration: none;
+	color: #000080;
+}
+
+
+a.paginate:hover {
+	background-color: #cccccc;
+	color: #FFF;
+	text-decoration: underline;
+}
+
+a.current {
+	border: 1px solid #000080;
+	font: bold .7em Arial,Helvetica,sans-serif;
+	padding: 2px 6px 2px 6px;
+	cursor: default;
+	background:#999999;
+	color: #FFF;
+	text-decoration: none;
+}
+
+span.inactive {
+	border: 1px solid #999;
+	font-family: Arial, Helvetica, sans-serif;
+	
+	padding: 2px 6px 2px 6px;
+	color: #999;
+	cursor: default;
+}
+
+table {
+	margin: 8px;
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+	
+	background: #999999;
+	color: #FFF;
+	padding: 2px 6px;
+	border-collapse: separate;
+	border: 1px solid #000;
+}
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	
+	border: 1px solid #DDD;
+}
+ol{
+    padding:0;
+    margin:0;
+}
+ol li{
+    padding:15px 0px 15px 0px;
+    border-top:7px solid #d5d5d5;
+    list-style-position:inside;
+}
+
+table.report{
+    width:100%;
+    margin-left:0px;
+}
+
+.viewleft{
+    width:150px;
+    float:left;
+}
+
+.viewright{
+    width:450px;
+    float:left;
+}
+
+.viewdetails{
+    clear:both;
+    width:400px;
+}
