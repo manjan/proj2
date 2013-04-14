@@ -56,6 +56,7 @@ if($_POST['search']!="")
 ?>
 <h1>Search Enquiry</h1>
 <div id='content'>
+   <div id='contentwrapper'>
   <form id="report" action="search.php" method="POST">
     <table>
         <tr><th>Date</th><th>Ref. No</th><th>Customer ID</th><th>Name</th><th>Enquiry Type</th><th>Membership</th><th>Status</th><th>Action</th></tr>
@@ -91,7 +92,11 @@ if($_POST['search']!="")
             echo "<tr style='text-align: center;'>";
             echo "<td>$row[2]</td>
             <td>$row[1]</td><td>$row[3]</td><td>$row[4]</td>
-            <td>$row[5]</td><td>$row[7]</td><td>$row[6]</td><td></td>
+            <td>$row[5]</td><td>$row[7]</td><td>$row[6]</td><td>
+            <a class='fancybox fancybox.ajax' href='view_enquiry.php?id=".$row[1]."'>View</a> /
+            <a href='enquiry_edit.php?id=".$row[1]."'>Edit</a> /
+            <a href='delete.php?id=".$row[1]."'> Void</a> /
+            <a href='print_single.php?id=".$row['1']."'> Print</a></td>
 
             </tr>\n";
           }
@@ -99,7 +104,14 @@ if($_POST['search']!="")
         ?>
     </table>
   </form>
+   </div>
 </div>
 </div>
+<script>
+    $(document).ready(function() {
+      $('.fancybox').fancybox();
+
+      });
+</script>
 </body>
 </html>

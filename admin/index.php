@@ -74,7 +74,7 @@ if($_POST['search']!="")
 <h1>Report</h1>
 <div id='content'>
  <div id='contentwrapper'>
-
+<div id='print'><a href="print.php" target="_blank"><img src="../images/print.png" alt="print" title="print" height="20" width="20"></a></div>
  <div>
   <form id="report" action="index.php" method="POST">
    <div id='element1'>

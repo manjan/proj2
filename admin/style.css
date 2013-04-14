@@ -3,7 +3,10 @@ body, table{
     font-size:12px;
     color:#000;
 }
-
+a{
+    color:#999999;
+    text-decoration:none;
+}
 #wrapper
 {
     margin: 10px auto;
@@ -18,6 +21,18 @@ body, table{
 {
     font-weight:bold;
     margin-bottom:10px;
+}
+#enquiry_form
+{
+    border:1px solid #ccc;
+    float:left;
+    padding:10px;
+}
+#form_element_right
+{
+    float:right;
+    width:38%;
+     
 }
 #content
 {
@@ -44,9 +59,34 @@ h1{
     float:left;
    
 }
+
+#print
+{
+    float:right;
+    width:100%;
+}
+#print img{
+    float:right;
+    padding:5px;
+}
+.radio
+{
+    margin-right:10px;
+    margin-left:10px;
+}
 #form_element
 {
-    padding:10px;
+    #form_element
+{
+    float:left;
+    display:inline;
+    width:50%;
+    margin-bottom: 7px;
+}
+}
+#pagination_top
+{
+    margin-bottom:5px;
 }
 #form_element1
 {
@@ -56,13 +96,15 @@ h1{
 }
 #form_wrapper
 {
-    float:left;
+   float:left;
     width:100%;
+  
 }
 
-input, textarea{
+input[type="text"]{
     border:1px solid #cccccc;
-        width: 118px;
+   width: 135px;
+   
 
    
 }
@@ -160,10 +202,18 @@ table.report{
     width:100%;
     margin-left:0px;
 }
-
-.viewleft{
+.viewleft1{
     width:150px;
     float:left;
+    font-weight:bold;
+  
+    }
+
+.viewleft{
+    width:200px;
+    float:left;
+    word-wrap: break-word;
+    
 }
 
 .viewright{
@@ -182,4 +232,25 @@ table.report{
     display:inline;
     width: 239px;
 font-weight: bold;
+}
+.etype1
+{
+    float:left;
+    display:inline;
+   width: 186px;
+    font-weight:bold;
+}
+.etype2
+{
+    float:left;
+    display:inline;
+    width: 100px;
+    font-weight:bold;
+}
+.etype3
+{
+    float:left;
+    display:inline;
+  
+    font-weight:bold;
 }

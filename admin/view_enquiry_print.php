@@ -1,9 +1,7 @@
 <?php
 include_once('connect.php');
-
 $enquiry_id =$_GET['id'];
 if($enquiry_id ==''){
-	//echo $enquiry_id;
 	echo '<h1>Invalid Enquiry. Please try again.</h1>';
 	exit();
 }else{
@@ -40,8 +38,6 @@ if($enquiry_id ==''){
 }
 
 ?>
-<link rel="stylesheet" type="text/css" href="style.css">
-	<div id='print'><a href=""><img src="../images/print.png" width="20" height="20"></a></div>
 <div style="width:400px;border:1px solid #ccc;padding:10px 10px 20px 10px;">
 	<div class="viewdetails">
 		<div class="viewleft1">Date:</div><div class="viewleft"><?php echo $e_date; ?></div>
