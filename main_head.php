@@ -23,7 +23,8 @@ function get_values(){
 <body leftmargin=0 topmargin=0 marginheight="0" marginwidth="0" bgcolor="#ffffff">
 <div id='wrapper'>
 <div id='header'>
-	
+<img src="images/logo.jpg" alt="logo" title="logo">
+<h1>Enquiry</h1>	
 </div>
 
 	

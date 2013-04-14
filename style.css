@@ -12,6 +12,10 @@ body{
 {
     float:left;
     width: 100%;
+    padding-top:10px;
+}
+h1{
+    font-size:16px;
 }
 #content
 {
@@ -37,15 +41,60 @@ body{
     display:inline;
     width:50%;
 }
+.save
+{
+    border:1px solid #000;
+    background:#ffb100;
+    color:#fff;
+    float:right;
+    font-weight:bold;
+    padding:5px 10px 5px 10px;
+}
+.reset{
+  border:1px solid #000;
+    background:#005682;
+    color:#fff;
+    float:left;
+    font-weight:bold;
+    padding:5px 10px 5px 10px;   
+}
+#form_element1
+{
+    float:left;
+    display:inline;
+    width: 100%;
+    margin-top:10px;
+}
+#rim_select, #battery_select,#wiper_select, #item_codes_select
+{
+    float:left;
+    display:inline;
+    width: 160px;
+     font-family:helvetica, arial, sans-serif;
+}
+table{
+    font-size:11px;
+    font-family:helvetica, arial, sans-serif;
+    width:600px;
+}
+table th{
+    font-weight:bold;
+    text-align:center;
+}
+table td{
+    text-align:center;
+}
 .label
 {
    width: 76px;
     float:left;
     font-weight:bold;
+    padding-top: 5px;
 }
 .oneabel
 {
     font-weight:bold;
+    padding-bottom: 10px;
     
 }
 .twolabel
@@ -58,4 +107,33 @@ body{
 {
     margin-right:10px;
     margin-left:10px;
+}
+input[type="text"]
+{
+    width:200px;
+}
+#wiper_table
+{
+    display:none;
+}
+.etype1
+{
+    float:left;
+    display:inline;
+    width: 185px;
+    font-weight:bold;
+}
+.etype2
+{
+    float:left;
+    display:inline;
+    width: 100px;
+    font-weight:bold;
+}
+.etype3
+{
+    float:left;
+    display:inline;
+    width: 120px;
+    font-weight:bold;
 }

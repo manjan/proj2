@@ -62,7 +62,9 @@ h1{
 
 input, textarea{
     border:1px solid #cccccc;
-    width: 199px;
+        width: 118px;
+
+   
 }
 input[type="submit"]{
     background:#999999;
@@ -80,61 +82,63 @@ input[type="submit"]{
    display: inline;
 }
 .paginate {
-	font-family: Arial, Helvetica, sans-serif;
-	
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 a.paginate {
-	border: 1px solid #000080;
-	padding: 2px 6px 2px 6px;
-	text-decoration: none;
-	color: #000080;
+    border: 1px solid #000080;
+    padding: 2px 6px 2px 6px;
+    text-decoration: none;
+    color: #000080;
 }
 
 
 a.paginate:hover {
-	background-color: #cccccc;
-	color: #FFF;
-	text-decoration: underline;
+    background-color: #cccccc;
+    color: #FFF;
+    text-decoration: underline;
 }
 
 a.current {
-	border: 1px solid #000080;
-	font: bold .7em Arial,Helvetica,sans-serif;
-	padding: 2px 6px 2px 6px;
-	cursor: default;
-	background:#999999;
-	color: #FFF;
-	text-decoration: none;
+    border: 1px solid #000080;
+    font: bold .7em Arial,Helvetica,sans-serif;
+    padding: 2px 6px 2px 6px;
+    cursor: default;
+    background:#999999;
+    color: #FFF;
+    text-decoration: none;
 }
 
 span.inactive {
-	border: 1px solid #999;
-	font-family: Arial, Helvetica, sans-serif;
-	
-	padding: 2px 6px 2px 6px;
-	color: #999;
-	cursor: default;
+    border: 1px solid #999;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding: 2px 6px 2px 6px;
+    color: #999;
+    cursor: default;
 }
 
 table {
-	margin: 8px;
+    border-collapse:collapse;
+    width:960px;
 }
-
+table, td, th
+{
+border:1px solid black;
+}
 th {
-	font-family: Arial, Helvetica, sans-serif;
-	
-	background: #999999;
-	color: #FFF;
-	padding: 2px 6px;
-	border-collapse: separate;
-	border: 1px solid #000;
+    font-family: Arial, Helvetica, sans-serif;  
+    background: #ffc000;
+    color: #000;
+    padding: 2px 6px;
+    
 }
 
 td {
-	font-family: Arial, Helvetica, sans-serif;
-	
-	border: 1px solid #DDD;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
 }
 ol{
     padding:0;

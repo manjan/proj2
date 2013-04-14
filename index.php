@@ -53,16 +53,18 @@
 		<?php print date("m-d-y");?>
 	</div>
 	<div id='form_element'>
-		<span  class='label'>Vehicle No:</span>
-		<input type="text" name="vehi_no" id="vehi_no" onkeyup="get_user_details();"/>
-	</div>
-</div>
-<div id='form_wrapper'>
-	<div id='form_element'>
 		<span  class='label'>Member:</span>
 		<input type="radio" name="member" id="member" value="yes"  onclick="">Yes
 		<input type="radio" name="member" value="no" checked="checked">No
 	</div>
+	
+</div>
+<div id='form_wrapper'>
+	<div id='form_element'>
+		<span  class='label'>Vehicle No:</span>
+		<input type="text" name="vehi_no" id="vehi_no" onkeyup="get_user_details();"/>
+	</div>
+	
 	<div id='form_element'>
 		<span  class='label'>Name:</span>
 		<input type="text" name="name" id="name"/>
@@ -81,22 +83,20 @@
 <div id='form_wrapper'>
 	<div id='form_element1'>
 		<div class='oneabel'>Enquiry Type:</div>
-		<div>
-		<input type="radio" name="e-type" value="tyre" class="radio">Tyre
-		<input type="radio" name="e_type" value="rim" class="radio">Rim
-		<input type="radio" name="e-type" value="battery" class="radio">Battery
-		<input type="radio" name="e_type" value="wiper" class="radio">Wiper
-		<input type="radio" name="e-type" value="membership" class="radio">Membership
-		<input type="radio" name="e_type" value="other" class="radio">Other  <input type="text" name="other" value="">
+		<div class="etypes">
+		<div class="etype1"><input type="radio" name="e_type" value="tyre" class="radio">Tyre</div>
+		<div class="etype1"><input type="radio" name="e_type" value="rim" class="radio">Rim</div>
+		<div class="etype1"><input type="radio" name="e_type" value="battery" class="radio">Battery</div>
+		<div class="etype1"><input type="radio" name="e_type" value="wiper" class="radio">Wiper</div>
+		<div class="etype1"><input type="radio" name="e_type" value="membership" class="radio">Membership</div>
+		<div class="etype1"><input type="radio" name="e_type" value="other" class="radio">Other </div> 
 		</div>
 	</div>
 		
 </div>
-<select id="items">
 
-	</select>
 <div id='form_wrapper'>
-	<div id="form_element">
+	<div id="form_element1">
 	<span  class='label'>Item Code:</span>
 	<select id="item_codes_select">
 		<option value="0">Select a Value...</option>
@@ -108,10 +108,13 @@
 		}
 		?>
 	</select>
+	<table><tr><th>Description</th><th>Balance QTY <br/>(WD)</th><th>Balance QTY<br/>(KB)</th><th>Balance QTY<br/>(TG)</th><th>Balance QTY <br/>(SHH)</th></tr>
+	<tr><td><div id="item_desc"></div></td><td><div id="item_bal_wd"></div></td><td><div id="item_bal_kb"></div></td><td><div id="item_bal_tg"></div></td><td><div id="item_bal_shh"></div></td></tr>
+	</table>
 	</div>
 </div>
 <div id='form_wrapper'>
-	<div id="form_element">
+	<div id="form_element1">
 	<span  class='label'>Rim:</span>
 	<select id="rim_select" onchange="changerim();">
 		<option value="0">Select a Value...</option>
@@ -123,18 +126,26 @@
 		}
 		?>
 	</select>
-	<div id="rim_desc"></div>
-	<div id="rim_bal_wd"></div>
-	<div id="rim_bal_kb"></div>
-	<div id="rim_bal_tg"></div>
-	<div id="rim_bal_shh"></div>
+	<table><tr><th>Description</th><th>Balance QTY <br/>(WD)</th><th>Balance QTY<br/>(KB)</th><th>Balance QTY<br/>(TG)</th><th>Balance QTY <br/>(SHH)</th></tr>
+	<tr><td><div id="rim_desc"></div></td><td><div id="rim_bal_wd"></div></td><td><div id="rim_bal_kb"></div></td><td><div id="rim_bal_tg"></div></td><td><div id="rim_bal_shh"></div></td></tr>
+	</table>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
 	</div>
 </div>
 <div id='form_wrapper'>
-	<div id="form_element">
+	<div id="form_element1">
 	<span  class='label'>Battery:</span>
 	<select id="battery_select" onchange="changebattery();">
 		<option value="0">Select a Value...</option>
@@ -146,16 +157,18 @@
 		}
 		?>
 	</select>
-	<div id="battery_desc"></div>
-	<div id="battery_bal_wd"></div>
-	<div id="battery_ybal_kb"></div>
-	<div id="battery_bal_tg"></div>
-	<div id="battery_bal_shh"></div>
+	<table><tr><th>Description</th><th>Balance QTY <br/>(WD)</th><th>Balance QTY<br/>(KB)</th><th>Balance QTY<br/>(TG)</th><th>Balance QTY <br/>(SHH)</th></tr>
+	<tr><td><div id="battery_desc"></div></td><td><div id="battery_bal_wd"></div></td><td><div id="battery_ybal_kb"></div></td><td><div id="battery_bal_tg"></div></td><td><div id="battery_bal_shh"></div></td></tr></table>
+	
+	
+	
+	
+	
 
 	</div>
 </div>
 <div id='form_wrapper'>
-	<div id="form_element">
+	<div id="form_element1">
 	<span  class='label'>Wiper:</span>
 	<select id="wiper_select" onchange="changewiper();">
 		<option value="0">Select a Value...</option>
@@ -167,36 +180,41 @@
 		}
 		?>
 	</select>
-	<div id="wiper_desc"></div>
-	<div id="wiper_bal_wd"></div>
-	<div id="wiper_bal_kb"></div>
-	<div id="wiper_bal_tg"></div>
-	<div id="wiper_bal_shh"></div>
+	<table id='wiper_table'><tr><th>Description</th><th>Balance QTY <br/>(WD)</th><th>Balance QTY<br/>(KB)</th><th>Balance QTY<br/>(TG)</th><th>Balance QTY <br/>(SHH)</th></tr>
+	<tr><td><div id="wiper_desc"></div></td><td><div id="wiper_bal_wd"></div></td><td><div id="wiper_bal_kb"></div></td><td><div id="wiper_bal_tg"></div></td><td><div id="wiper_bal_shh"></div></td></tr>
+	</table>
+	
+	
+	
+	
+	
 	</div>
 </div>
 <div id='form_wrapper'>
 	<div id="form_element1">
 	<div  class='twolabel'>Customer Comment:</div>
-	<textarea name="comment" cols="110" rows="5"></textarea>
+	<textarea name="comment" cols="113" rows="5"></textarea>
 	</div>
 </div>
 <div id='form_wrapper'>
 	<div id="form_element1">
 	<div  class='twolabel'>Follow up:</div>
-	<textarea name="folowup" cols="110" rows="5"></textarea>
+	<textarea name="folowup" cols="113" rows="5"></textarea>
 	</div>
 </div>
 <div id='form_wrapper'>
 	<div id="form_element1">
 	<div  class='twolabel'>Remark:</div>
-	Status
-	        <input type="radio" name="remark" value="Pending" class="radio">Pending
-		<input type="radio" name="remark" value="Confirmed" class="radio">Confirmed
-		<input type="radio" name="remark" value="Rejected" class="radio">Rejected  <input type="text" name="otherremark" value="">
+	<div class="etype2">Status</div>
+	        <div class="etype1"><input type="radio" name="remark" value="Pending" class="radio">Pending</div>
+		<div class="etype1"><input type="radio" name="remark" value="Confirmed" class="radio">Confirmed</div>
+		<div class="etype3"><input type="radio" name="remark" value="Rejected" class="radio">Rejected </div> <input type="text" name="otherremark" value="">
 	</div>
 </div>
-<input type="button" name="reset" value="Reset">
-<input type="submit" name="submit" value="Save">
+<div id="form_wrapper">
+<input type="button" name="reset" value="Void" class="reset">
+<input type="submit" name="submit" value="Save" class="save">
+</div>
 </form>	
 </div>
 </div>
