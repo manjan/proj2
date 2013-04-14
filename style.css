@@ -28,6 +28,13 @@ h1{
     float:left;
     padding:10px;
 }
+#form_element_right
+{
+    float:right;
+    width:38%;
+    margin-top:5px;
+    margin-bottom:5px;   
+}
 .form_wrapper
 {
     float:left;
@@ -40,6 +47,7 @@ h1{
     float:left;
     display:inline;
     width:50%;
+    margin-bottom:10px;
 }
 .save
 {
@@ -140,4 +148,8 @@ input[type="text"]
 
 .details_table tbody tr th{
     text-decoration: underline;
+}
+
+.details_table tbody tr td div{
+    font-weight: bold;
 }

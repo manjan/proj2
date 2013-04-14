@@ -1,3 +1,63 @@
+function addTyres(){
+	var selectVal = $('#item_codes_select :selected').val();
+	selectVal = selectVal.replace(/[^a-zA-Z0-9]/g,'');
+	var val_tags = jQuery('#tags_tyres').val();
+	if(selectVal!='' && selectVal !=0){
+		if(val_tags.indexOf(selectVal)>=0){
+			alert('Selected Code already added.');
+		}else{
+			jQuery('#tags_tyres').addTag(selectVal);
+		}
+	}else{
+		alert('Please select a code to add.');
+	}
+}
+
+function addRim(){
+	var selectVal = $('#rim_select :selected').val();
+	selectVal = selectVal.replace(/[^a-zA-Z0-9]/g,'');
+	var val_tags = jQuery('#tags_rims').val();
+	if(selectVal!='' && selectVal !=0){
+		if(val_tags.indexOf(selectVal)>=0){
+			alert('Selected Code already added.');
+		}else{
+			jQuery('#tags_rims').addTag(selectVal);
+		}
+	}else{
+		alert('Please select a code to add.');
+	}
+}
+
+function addBattery(){
+	var selectVal = $('#battery_select :selected').val();
+	selectVal = selectVal.replace(/[^a-zA-Z0-9]/g,'');
+	var val_tags = jQuery('#tags_batteries').val();
+	if(selectVal!='' && selectVal !=0){
+		if(val_tags.indexOf(selectVal)>=0){
+			alert('Selected Code already added.');
+		}else{
+			jQuery('#tags_batteries').addTag(selectVal);
+		}
+	}else{
+		alert('Please select a code to add.');
+	}
+}
+
+function addWiper(){
+	var selectVal = $('#wiper_select :selected').val();
+	selectVal = selectVal.replace(/[^a-zA-Z0-9]/g,'');
+	var val_tags = jQuery('#tags_wipers').val();
+	if(selectVal!='' && selectVal !=0){
+		if(val_tags.indexOf(selectVal)>=0){
+			alert('Selected Code already added.');
+		}else{
+			jQuery('#tags_wipers').addTag(selectVal);
+		}
+	}else{
+		alert('Please select a code to add.');
+	}
+}
+
 function get_user_details(){
 	var radio_value = $('input:radio[name=member]:checked').val();
 	if(radio_value=='yes'){	
@@ -13,6 +73,37 @@ function get_user_details(){
     }else{
     }
 
+}
+
+function changetyres(){
+	var selectVal = $('#item_codes_select :selected').val();
+	$('#item_desc').html('Loading...');
+	$('#item_bal_wd').html('Loading...');
+	$('#item_bal_kb').html('Loading...');
+	$('#item_bal_tg').html('Loading...');
+	$('#item_bal_shh').html('Loading...');
+
+
+	if(selectVal!='0'){	
+        jQuery.post("ajax.php?item_details=1&item_code=" + selectVal,               
+	     function (data) {
+               if (data.success == 'true') {
+					$('#item_desc').html('<b>' + data.description + '<b>');
+					$('#item_bal_wd').html('<b>' + data.wd_balance + '<b>');
+					$('#item_bal_kb').html('<b>' + data.kb_balance + '<b>');
+					$('#item_bal_tg').html('<b>' + data.tg_balance + '<b>');
+					$('#item_bal_shh').html('<b>' + data.shh_balance + '<b>');
+               }else{
+					$('#item_desc').html('Not Found');
+					$('#item_bal_wd').html('Not Found');
+					$('#item_bal_kb').html('Not Found');
+					$('#item_bal_tg').html('Not Found');
+					$('#item_bal_shh').html('Not Found');
+               }
+           }, 'json');
+    }else{
+
+    }
 }
 
 function changerim(){

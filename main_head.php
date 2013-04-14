@@ -7,10 +7,14 @@ include ('connect.php');
 <html>
 <head>
 <title>Hankook Driving Emotion</title>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;">
+	<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="jquery.tagsinput.css">
+
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/jquery.tagsinput.min.js"></script>
 
 <script language="text/javascript">
 function get_values(){
