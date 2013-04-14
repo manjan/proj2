@@ -28,11 +28,11 @@ function changerim(){
         jQuery.post("ajax.php?item_details=1&item_code=" + selectVal,               
 	     function (data) {
                if (data.success == 'true') {
-					$('#rim_desc').html(data.description);
-					$('#rim_bal_wd').html(data.wd_balance);
-					$('#rim_bal_kb').html(data.kb_balance);
-					$('#rim_bal_tg').html(data.tg_balance);
-					$('#rim_bal_shh').html(data.shh_balance);
+					$('#rim_desc').html('<b>' + data.description + '<b>');
+					$('#rim_bal_wd').html('<b>' + data.wd_balance + '<b>');
+					$('#rim_bal_kb').html('<b>' + data.kb_balance + '<b>');
+					$('#rim_bal_tg').html('<b>' + data.tg_balance + '<b>');
+					$('#rim_bal_shh').html('<b>' + data.shh_balance + '<b>');
                }else{
 					$('#rim_desc').html('Not Found');
 					$('#rim_bal_wd').html('Not Found');

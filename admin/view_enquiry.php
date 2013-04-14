@@ -38,6 +38,12 @@ if($enquiry_id ==''){
 		<div class="viewleft">Date:</div><div class="viewleft"><?php echo $e_date; ?></div>
 	</div>
 	<div class="viewdetails">
+		<div class="viewleft">Ref No.:</div><div class="viewleft"><?php echo $e_id; ?></div>
+	</div>
+	<div class="viewdetails">
+		<div class="viewleft">Vehicle No.:</div><div class="viewleft"><?php echo $cid; ?></div>
+	</div>
+	<div class="viewdetails">
 		<div class="viewleft">Membership:</div><div class="viewleft"><?php echo $membership; ?></div>
 	</div>
 	<div class="viewdetails">
@@ -49,7 +55,15 @@ if($enquiry_id ==''){
 	<div class="viewdetails">
 		<div class="viewleft">Email:</div><div class="viewleft"><?php echo $email; ?></div>
 	</div>
-	
+	<div class="viewdetails">
+		<div class="viewleft">Enquiry Type:</div><div class="viewleft"><?php echo $e_type; ?></div>
+	</div>
+	<div class="viewdetails">
+		<div class="viewleft">Status:</div><div class="viewleft"><?php echo $status; ?></div>
+	</div>
+
+
+
 
 
 </div>

@@ -1,6 +1,6 @@
 body{
     font-family:helvetica, arial, sans-serif;
-    font-size:12px;
+    font-size:14px;
     color:#000;
 }
 #wrapper
@@ -28,7 +28,7 @@ h1{
     float:left;
     padding:10px;
 }
-#form_wrapper
+.form_wrapper
 {
     float:left;
     width:100%;
@@ -86,7 +86,7 @@ table td{
 }
 .label
 {
-   width: 76px;
+   width: 100px;
     float:left;
     font-weight:bold;
     padding-top: 5px;
@@ -136,4 +136,8 @@ input[type="text"]
     display:inline;
     width: 120px;
     font-weight:bold;
+}
+
+.details_table tbody tr th{
+    text-decoration: underline;
 }

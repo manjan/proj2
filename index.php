@@ -95,7 +95,7 @@
 		
 </div>
 
-<div id='form_wrapper'>
+<div class='form_wrapper'>
 	<div id="form_element1">
 	<span  class='label'>Item Code:</span>
 	<select id="item_codes_select">
@@ -108,12 +108,19 @@
 		}
 		?>
 	</select>
-	<table><tr><th>Description</th><th>Balance QTY <br/>(WD)</th><th>Balance QTY<br/>(KB)</th><th>Balance QTY<br/>(TG)</th><th>Balance QTY <br/>(SHH)</th></tr>
+	<table style="width:670px;" class="details_table">
+		<tr>
+			<th><u>Description</u></th>
+			<th style="width:100px;"><u>Balance QTY <br/>(WD)</u></th>
+			<th style="width:100px;"><u>Balance QTY<br/>(KB)</u></th>
+			<th style="width:100px;">Balance QTY<br/>(TG)</th>
+			<th style="width:100px;">Balance QTY <br/>(SHH)</th>
+		</tr>
 	<tr><td><div id="item_desc"></div></td><td><div id="item_bal_wd"></div></td><td><div id="item_bal_kb"></div></td><td><div id="item_bal_tg"></div></td><td><div id="item_bal_shh"></div></td></tr>
 	</table>
 	</div>
 </div>
-<div id='form_wrapper'>
+<div class='form_wrapper'>
 	<div id="form_element1">
 	<span  class='label'>Rim:</span>
 	<select id="rim_select" onchange="changerim();">
@@ -126,25 +133,20 @@
 		}
 		?>
 	</select>
-	<table><tr><th>Description</th><th>Balance QTY <br/>(WD)</th><th>Balance QTY<br/>(KB)</th><th>Balance QTY<br/>(TG)</th><th>Balance QTY <br/>(SHH)</th></tr>
+	<table style="width:670px;" class="details_table">
+		<tr>
+			<th><u>Description<u></th>
+			<th style="width:100px;">Balance QTY <br/>(WD)</th>
+			<th style="width:100px;">Balance QTY<br/>(KB)</th>
+			<th style="width:100px;">Balance QTY<br/>(TG)</th>
+			<th style="width:100px;">Balance QTY <br/>(SHH)</th>
+		</tr>
 	<tr><td><div id="rim_desc"></div></td><td><div id="rim_bal_wd"></div></td><td><div id="rim_bal_kb"></div></td><td><div id="rim_bal_tg"></div></td><td><div id="rim_bal_shh"></div></td></tr>
 	</table>
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
 	</div>
 </div>
-<div id='form_wrapper'>
+<div class='form_wrapper'>
 	<div id="form_element1">
 	<span  class='label'>Battery:</span>
 	<select id="battery_select" onchange="changebattery();">
@@ -157,7 +159,14 @@
 		}
 		?>
 	</select>
-	<table><tr><th>Description</th><th>Balance QTY <br/>(WD)</th><th>Balance QTY<br/>(KB)</th><th>Balance QTY<br/>(TG)</th><th>Balance QTY <br/>(SHH)</th></tr>
+	<table style="width:670px;" class="details_table">
+		<tr>
+			<th>Description</th>
+			<th style="width:100px;">Balance QTY <br/>(WD)</th>
+			<th style="width:100px;">Balance QTY<br/>(KB)</th>
+			<th style="width:100px;">Balance QTY<br/>(TG)</th>
+			<th style="width:100px;">Balance QTY <br/>(SHH)</th>
+		</tr>
 	<tr><td><div id="battery_desc"></div></td><td><div id="battery_bal_wd"></div></td><td><div id="battery_ybal_kb"></div></td><td><div id="battery_bal_tg"></div></td><td><div id="battery_bal_shh"></div></td></tr></table>
 	
 	
@@ -167,7 +176,7 @@
 
 	</div>
 </div>
-<div id='form_wrapper'>
+<div class='form_wrapper'>
 	<div id="form_element1">
 	<span  class='label'>Wiper:</span>
 	<select id="wiper_select" onchange="changewiper();">
@@ -180,17 +189,20 @@
 		}
 		?>
 	</select>
-	<table id='wiper_table'><tr><th>Description</th><th>Balance QTY <br/>(WD)</th><th>Balance QTY<br/>(KB)</th><th>Balance QTY<br/>(TG)</th><th>Balance QTY <br/>(SHH)</th></tr>
-	<tr><td><div id="wiper_desc"></div></td><td><div id="wiper_bal_wd"></div></td><td><div id="wiper_bal_kb"></div></td><td><div id="wiper_bal_tg"></div></td><td><div id="wiper_bal_shh"></div></td></tr>
+	<table style="width:670px;" class="details_table">
+		<tr>
+			<th>Description</th>
+			<th style="width:100px;">Balance QTY <br/>(WD)</th>
+			<th style="width:100px;">Balance QTY<br/>(KB)</th>
+			<th style="width:100px;">Balance QTY<br/>(TG)</th>
+			<th style="width:100px;">Balance QTY <br/>(SHH)</th></tr>
+		<tr><td><div id="wiper_desc"></div></td><td><div id="wiper_bal_wd"></div></td><td><div id="wiper_bal_kb"></div></td><td><div id="wiper_bal_tg"></div></td><td><div id="wiper_bal_shh"></div></td></tr>
 	</table>
-	
-	
-	
-	
-	
 	</div>
 </div>
-<div id='form_wrapper'>
+
+
+<div class='form_wrapper'>
 	<div id="form_element1">
 	<div  class='twolabel'>Customer Comment:</div>
 	<textarea name="comment" cols="113" rows="5"></textarea>
