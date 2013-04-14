@@ -126,12 +126,12 @@ function addtyres(){
 	<div id='form_element1'>
 		<div class='oneabel'>Enquiry Type:</div>
 		<div class="etypes">
-		<div class="etype1"><input type="radio" name="e_type" value="tyre" class="radio" onclick="$('.details_section').hide();$('#tyres_details').show();">Tyre</div>
-		<div class="etype1"><input type="radio" name="e_type" value="rim" class="radio" onclick="$('.details_section').hide();$('#rim_details').show();">Rim</div>
-		<div class="etype1"><input type="radio" name="e_type" value="battery" class="radio" onclick="$('.details_section').hide();$('#battery_details').show();">Battery</div>
-		<div class="etype1"><input type="radio" name="e_type" value="wiper" class="radio" onclick="$('.details_section').hide();$('#wiper_details').show();">Wiper</div>
-		<div class="etype1"><input type="radio" name="e_type" value="membership" class="radio" onclick="$('.details_section').hide();">Membership</div>
-		<div class="etype1"><input type="radio" name="e_type" value="other" class="radio" onclick="$('.details_section').hide();">Other </div> 
+		<div class="etype1"><input type="radio" name="e_type" value="Tyre" class="radio" onclick="$('.details_section').hide();$('#tyres_details').show();">Tyre</div>
+		<div class="etype1"><input type="radio" name="e_type" value="Rim" class="radio" onclick="$('.details_section').hide();$('#rim_details').show();">Rim</div>
+		<div class="etype1"><input type="radio" name="e_type" value="Battery" class="radio" onclick="$('.details_section').hide();$('#battery_details').show();">Battery</div>
+		<div class="etype1"><input type="radio" name="e_type" value="Wiper" class="radio" onclick="$('.details_section').hide();$('#wiper_details').show();">Wiper</div>
+		<div class="etype1"><input type="radio" name="e_type" value="Membership" class="radio" onclick="$('.details_section').hide();">Membership</div>
+		<div class="etype1"><input type="radio" name="e_type" value="Other" class="radio" onclick="$('.details_section').hide();">Other </div> 
 		</div>
 	</div>
 		

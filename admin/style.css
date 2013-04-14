@@ -34,7 +34,7 @@ body, table{
 h1{
   
    font-size:16px;
-   background:#cccccc;
+
    padding:5px 0px 5px 5px;
 }
 #login_form
@@ -70,7 +70,7 @@ input[type="submit"]{
     background:#999999;
     color:#fff;
     padding:2px 10px 2px 10px;
-    float:right;
+    
     width: 100px;
     border:1px solid #000;
     font-weight:bold;
@@ -80,6 +80,7 @@ input[type="submit"]{
    font-weight: bold;
    float: left;
    display: inline;
+   padding-top: 4px;
 }
 .paginate {
     font-family: Arial, Helvetica, sans-serif;
@@ -137,7 +138,7 @@ th {
 
 td {
     font-family: Arial, Helvetica, sans-serif;
-    
+    text-align:center;
     
 }
 ol{
@@ -149,7 +150,12 @@ ol li{
     border-top:7px solid #d5d5d5;
     list-style-position:inside;
 }
-
+#element1
+{
+    float:left;
+    width:100%;
+    margin-bottom: 10px;
+}
 table.report{
     width:100%;
     margin-left:0px;
@@ -168,4 +174,12 @@ table.report{
 .viewdetails{
     clear:both;
     width:400px;
+    padding-top:10px;
+}
+.search_ele
+{
+    float:left;
+    display:inline;
+    width: 239px;
+font-weight: bold;
 }

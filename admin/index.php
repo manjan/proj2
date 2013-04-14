@@ -67,18 +67,20 @@ if($_POST['search']!="")
     $query_count .= $where;
        $main_query .= " ORDER BY e_id ASC ";
 }else{
-    $main_query = "SELECT id,e_id, enquiry_date,cid,name,e_type,status,membership FROM enquiry  ORDER BY e_id ASC";
+    $main_query = "SELECT id, e_id, enquiry_date,cid,name,e_type,status,membership FROM enquiry  ORDER BY e_id ASC";
     $query_count = "SELECT COUNT(*) FROM enquiry";
 }
 ?>
+<h1>Report</h1>
 <div id='content'>
  <div id='contentwrapper'>
- <h1>Report</h1>
+
  <div>
   <form id="report" action="index.php" method="POST">
-   From Date: <input type="text" name="fromdate" id="fromdate">
-   To Date: <input type="text" name="todate" id="todate">
-   Enquiry Type:<select name="enquiry_type">
+   <div id='element1'>
+   <div class="search_ele"><div class="label">  From Date:</div> <input type="text" name="fromdate" id="fromdate"></div>
+   <div class="search_ele"> <div class="label">To Date: </div><input type="text" name="todate" id="todate"></div>
+    <div class="search_ele"><div class="label">Enquiry Type:</div><select name="enquiry_type">
    <option value="">Select One</option>
    <option value="Tyre">Tyre</option>
    <option value="Rim">Rim</option>
@@ -86,22 +88,25 @@ if($_POST['search']!="")
    <option value="Wiper">Wiper</option>
     <option value="Membership">Membership</option>
    <option value="Other">Other</option>
-   </select>
-   Status: <select name="status">
+   </select></div>
+   <div class="search_ele"><div class="label"> Status:</div> <select name="status">
    <option value="">Select One</option>
    <option value="Pending">Pending</option>
    <option value="Confirmed">Confirmed</option>
    <option value="Rejected">Rejected</option>
-   </select><br/>
-   
-   Customer ID:<input type="text" name="customerid">
-   Name: <input type="text" name="customername">
-   Membership:<select name="membership">
+   </select></div>
+   </div>
+   <div id='element1'>
+   <div class="search_ele"><div class="label"> Customer ID:</div><input type="text" name="customerid"></div>
+   <div class="search_ele"><div class="label">  Name:</div> <input type="text" name="customername"></div>
+    <div class="search_ele"><div class="label"> Membership:</div><select name="membership">
    <option value="">Select One</option>
    <option value="Yes">Yes</option>
    <option value="No">No</option>
-   </select>
-   <input type="submit" name="search" value="Search">
+   </select></div>   
+    <div class="search_ele">
+   <input type="submit" name="search" value="Search"></div>
+    </div>
   </form>
  </div>
 <?php
@@ -114,15 +119,15 @@ $pages = new Paginator;
 $pages->items_total = $num_rows[0];
 $pages->mid_range = 9; // Number of pages to display. Must be odd and > 3
 $pages->paginate();
-
+echo '<div id="pagination_top">';
 echo $pages->display_pages();
 echo "<span class=\"\">".$pages->display_jump_menu().$pages->display_items_per_page()."</span>";
-
+echo '</div>';
 
 echo "<table align='center' class='report'>";
 echo "<tr><th>ID</th><th>Ref.No</th><th>Date</th><th>Customer ID</th><th>Name</th><th>Enquiry Type</th><th>Status</th><th>Membership</th></tr>";
 $query = $main_query." $pages->limit";
-//print $query;
+
 $result = mysql_query($query) or die(mysql_error());
 
 while($row = mysql_fetch_row($result))
@@ -135,9 +140,10 @@ while($row = mysql_fetch_row($result))
   </tr>\n";
 }
 echo "</table>";
-
+echo '<div id="pagination_bottom" style="margin-top:10px;">';
 echo $pages->display_pages();
 echo "<p class=\"paginate\">Page: $pages->current_page of $pages->num_pages</p>\n";
+echo '</div>';
 ?>
  </div>
 </div>

@@ -21,7 +21,7 @@ include ('connect.php');
 <div id='wrapper'>
 <div id='header'>
 <img src="../images/logo.jpg" alt="logo" title="logo">
-<h1>Enquiry</h1>	
+	
 </div>
 
 	

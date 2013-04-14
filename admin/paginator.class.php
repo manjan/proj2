@@ -10,7 +10,7 @@ class Paginator{
 	var $high;
 	var $limit;
 	var $return;
-	var $default_ipp = 25;
+	var $default_ipp = 5;
 	var $querystring;
 
 	function Paginator()
@@ -107,7 +107,7 @@ class Paginator{
 	function display_items_per_page()
 	{
 		$items = '';
-		$ipp_array = array(10,25,50,100,'All');
+		$ipp_array = array(5,10,25,50,100,'All');
 		foreach($ipp_array as $ipp_opt)	$items .= ($ipp_opt == $this->items_per_page) ? "<option selected value=\"$ipp_opt\">$ipp_opt</option>\n":"<option value=\"$ipp_opt\">$ipp_opt</option>\n";
 		return "<span class=\"paginate\">Items per page:</span><select class=\"paginate\" onchange=\"window.location='$_SERVER[PHP_SELF]?page=1&ipp='+this[this.selectedIndex].value+'$this->querystring';return false\">$items</select>\n";
 	}

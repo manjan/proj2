@@ -7,7 +7,7 @@ if($enquiry_id ==''){
 	exit();
 }else{
 	//echo $enquiry_id;
-	$query = "Select id,e_id, enquiry_date,cid,name,e_type,status,membership,phone,email from enquiry where e_id='$enquiry_id'";
+	$query = "Select id,e_id, enquiry_date,cid,name,e_type,status,membership,phone,email,tyres,rims,batteries,wipers,comment,followup,remarks from enquiry where e_id='$enquiry_id'";
 	$result = mysql_query($query);
 	$count = mysql_num_rows($result);
 	if($count>0){
@@ -23,7 +23,13 @@ if($enquiry_id ==''){
 			$membership = $row[7];
 			$phohe = $row[8];
 			$email = $row[9];
-
+			$tyres = $row[10];
+			$rims = $row[11];
+			$batteries = $row[12];
+			$wipers = $row[13];
+			$comment = $row[14];
+			$followup = $row[15];
+			$remarks = $row[16];
 
 		}
 	}else{
@@ -58,6 +64,53 @@ if($enquiry_id ==''){
 	<div class="viewdetails">
 		<div class="viewleft">Enquiry Type:</div><div class="viewleft"><?php echo $e_type; ?></div>
 	</div>
+	<?php
+	if($e_type=='Tyre'){
+	?>
+	<div class="viewdetails">
+		<div class="viewleft">Tyres:</div><div class="viewleft"><?php echo $tyres; ?></div>
+	</div>
+	<?php
+	}
+	?>
+	<?php
+	if($e_type=='Rim'){
+	?>
+	<div class="viewdetails">
+		<div class="viewleft">Rims:</div><div class="viewleft"><?php echo $rims; ?></div>
+	</div>
+	<?php
+	}
+	?>
+	<?php
+	if($e_type=='Wiper'){
+	?>
+	<div class="viewdetails">
+		<div class="viewleft">Wipers:</div><div class="viewleft"><?php echo $wipers; ?></div>
+	</div>
+	<?php
+	}
+	?>
+	<?php
+	if($e_type=='Battery'){
+	?>
+	<div class="viewdetails">
+		<div class="viewleft">Batteries:</div><div class="viewleft"><?php echo $batteries; ?></div>
+	</div>
+	<?php
+	}
+	?>
+	<div class="viewdetails">
+		<div class="viewleft">Comment:</div><div class="viewleft"><?php echo $comment; ?></div>
+	</div>
+	<div class="viewdetails">
+		<div class="viewleft">Follow Up:</div><div class="viewleft"><?php echo $followup; ?></div>
+	</div>
+	<div class="viewdetails">
+		<div class="viewleft">Remarks:</div><div class="viewleft"><?php echo $remarks; ?></div>
+	</div>
+
+
 	<div class="viewdetails">
 		<div class="viewleft">Status:</div><div class="viewleft"><?php echo $status; ?></div>
 	</div>
