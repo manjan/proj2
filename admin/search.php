@@ -54,6 +54,7 @@ if($_POST['search']!="")
     $query_count = "SELECT COUNT(*) FROM enquiry";
 }
 ?>
+<h1>Search Enquiry</h1>
 <div id='content'>
   <form id="report" action="search.php" method="POST">
     <table>
